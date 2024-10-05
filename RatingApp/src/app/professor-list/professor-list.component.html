@@ -1,0 +1,22 @@
+<div class="professor-list">
+    <div class="header">
+        <h2>No professors with "<span class="highlight">shubham</span>" in their name at Johns Hopkins School of Public
+            Health</h2>
+        <p>23 professors with "<span class="highlight">shubham</span>" in their name at other schools</p>
+    </div>
+
+    <div class="professor-card" *ngFor="let professor of professors">
+        <div class="professor-info">
+            <h3>{{ professor.name }}</h3>
+            <p>{{ professor.department }}</p>
+            <p>{{ professor.university }}</p>
+        </div>
+        <div class="rating-info">
+            <span class="quality">{{ professor.quality }}</span>
+            <div class="details">
+                <p>{{ professor.percentage }}% would take again</p>
+                <p>{{ professor.difficulty }} level of difficulty</p>
+            </div>
+        </div>
+    </div>
+</div>
